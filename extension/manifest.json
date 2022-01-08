@@ -1,0 +1,25 @@
+{
+    "name": "shortIt",
+    "version": "1.0",
+    "description": "ShortIt is web extension to shortlen your own url !",
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "imgs/icon.png",
+        "32": "imgs/icon.png",
+        "48": "imgs/icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": [
+          "js/content.js",
+          "js/jquery-3.6.0.min.js",
+          "js/bootstrap.min.js"
+        ]
+      }
+    ],
+    "manifest_version": 2
+  }
