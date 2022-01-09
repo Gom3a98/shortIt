@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 var admin = require('firebase-admin');
 const randomstring = require("randomstring");
-var serviceAccount = require("./secret/config.json");
+var serviceAccount = require("./config.json");
 
 const app = express()
 
