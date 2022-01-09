@@ -59,7 +59,9 @@ app.post('/url', cors(), async (req, res) => {
     const host = req.get('host');
     var generatedURL = await generateURL(host, URL)
     if (generatedURL != null)
-        res.json(generatedURL)
+        res.json({
+            generatedURL
+        })
     else
         res.sendStatus(500)
 });
