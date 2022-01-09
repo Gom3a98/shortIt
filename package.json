@@ -18,7 +18,7 @@
     "nodemon": "^2.0.15",
     "nodenpm": "^0.1.6",
     "randomstring": "^1.2.1",
-     "express": "~4.16.1",
+     "express": "~4.16.1"
 
   }
 }
